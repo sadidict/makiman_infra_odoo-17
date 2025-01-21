@@ -12,6 +12,7 @@ set -e
 # install python packages
 pip3 install pip --upgrade
 pip3 install -r /etc/odoo/requirements.txt
+pip3 install -r /mnt/extra-addons/eqp_backup/requirements.txt
 
 # sed -i 's|raise werkzeug.exceptions.BadRequest(msg)|self.jsonrequest = {}|g' /usr/lib/python3/dist-packages/odoo/http.py
 
